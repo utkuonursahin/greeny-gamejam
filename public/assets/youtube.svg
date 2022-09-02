@@ -1,0 +1,30 @@
+<svg width="74" height="74" viewBox="0 0 74 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_bii_122_50)">
+<circle cx="36.64" cy="36.64" r="36.64" fill="white" fill-opacity="0.2"/>
+</g>
+<path d="M37 23C17.344 23 17 24.7026 17 38C17 51.2974 17.344 53 37 53C56.656 53 57 51.2974 57 38C57 24.7026 56.656 23 37 23ZM43.41 38.6506L34.43 42.7338C33.644 43.0883 33 42.6909 33 41.8455V34.1545C33 33.311 33.644 32.9117 34.43 33.2662L43.41 37.3494C44.196 37.7078 44.196 38.2922 43.41 38.6506Z" fill="url(#paint0_linear_122_50)"/>
+<defs>
+<filter id="filter0_bii_122_50" x="-30" y="-30" width="133.28" height="133.28" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feGaussianBlur in="BackgroundImage" stdDeviation="15"/>
+<feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur_122_50"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_122_50" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="2"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.1 0"/>
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_122_50"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-5"/>
+<feGaussianBlur stdDeviation="6"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0.35 0"/>
+<feBlend mode="normal" in2="effect2_innerShadow_122_50" result="effect3_innerShadow_122_50"/>
+</filter>
+<linearGradient id="paint0_linear_122_50" x1="54.0732" y1="21.0995" x2="22.7125" y2="52.8085" gradientUnits="userSpaceOnUse">
+<stop stop-color="#EB0505"/>
+<stop offset="1" stop-color="#CF1178"/>
+</linearGradient>
+</defs>
+</svg>

@@ -1,0 +1,29 @@
+@use "../abstracts/variables" as var;
+@use "../base/typography" as typo;
+.header{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 2rem 16rem;
+  &__logo{
+    width:23rem;
+    height:9rem;
+  }
+  &__nav{
+    &-list{
+      display: flex;
+      gap: 7.5rem;
+      list-style: none;
+    }
+    &-link{
+      opacity: .7;
+      color: var.$color-green;
+      font-family: typo.$font-secondary;
+      $font-weight: typo.$font-thin;
+      font-size: 2.4rem;
+      text-decoration: none;
+      &:hover{opacity: 1}
+    }
+    &-link.active{opacity: 1;}
+  }
+}
