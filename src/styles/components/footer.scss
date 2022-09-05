@@ -12,6 +12,7 @@
     font-size: 1.6rem;
     @media only screen and (max-width: var.$bp-biggest) {letter-spacing: 1.6px; text-align: center;}
     @media only screen and (max-width: var.$bp-medium){letter-spacing: 1.2px; font-size: 1.4rem;}
+    @media only screen and (max-width: var.$bp-medium){letter-spacing: 1px; font-size: 1.2rem;}
     & a{
       text-decoration: none;
       color: inherit;
