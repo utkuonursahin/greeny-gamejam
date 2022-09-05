@@ -10,6 +10,8 @@
   & span{
     color: var.$color-dark;
     font-size: 1.6rem;
+    @media only screen and (max-width: var.$bp-biggest) {letter-spacing: 1.6px; text-align: center;}
+    @media only screen and (max-width: var.$bp-medium){letter-spacing: 1.2px; font-size: 1.4rem;}
     & a{
       text-decoration: none;
       color: inherit;

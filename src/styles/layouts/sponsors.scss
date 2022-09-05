@@ -7,6 +7,7 @@
   flex-direction: column;
   align-items: center;
   gap: 6rem;
+  @media only screen and (max-width: var.$bp-biggest) {padding: 4rem;}
   &__heading{
     &--main{background: linear-gradient(to bottom, #99FA89,#7AE369,#00C667);}
     &--platin{background: linear-gradient(to bottom, #68F1C8,#00FFFF,#0020C6);}
@@ -16,6 +17,7 @@
       font-size: 3.6rem;
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
+      text-align: center;
     }
   }
   &__main, &__platin, &__gold, &__silver{
@@ -25,6 +27,9 @@
     gap: 4rem;
     grid-template-rows: repeat(auto-fit,min-content);
     grid-template-columns: repeat(auto-fit, minmax(40rem, max-content));
+    @media only screen and (max-width: var.$bp-biggest) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, max-content));
+    }
   }
   &__main .sponsor{
     border: .25rem solid var.$color-green--light;

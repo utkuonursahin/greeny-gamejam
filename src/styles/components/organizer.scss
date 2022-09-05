@@ -1,15 +1,20 @@
 @use "../abstracts/variables" as var;
 .organizer{
+  width: 40vw;
   display: flex;
   flex-direction: column;
+  gap: 2rem;
   align-items: center;
   justify-content: space-between;
-  padding: 4rem 0;
+  padding: 3rem 0;
   border: .25rem solid var.$color-green--light;
   border-radius: 5rem;
   box-shadow: 0 0 .1rem .25rem var.$color-green--light;
+  @media only screen and (max-width: var.$bp-biggest){width: 85%;}
+  & > img{height: max( 10vw, 8rem);}
   &__links{
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
+    & a img{height: max(5vw, 4rem);}
   }
 }

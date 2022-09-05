@@ -9,14 +9,14 @@ function Location() {
   })
   return (
     <section className="location">
-      <MapContainer center={[39.888189, 32.6568321]} zoom={15} scrollWheelZoom={false}>
+      <MapContainer center={[39.888189, 32.6568321]} zoom={14} scrollWheelZoom={false}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-          url="https://tiles.stadiamaps.com/tiles/osm_bright/{z}/{x}/{y}{r}.png"
+          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
         />
         <Marker position={[39.8882997, 32.6557593]} icon={icon}>
           <Popup>
-            A pretty CSS3 popup. <br /> Easily customizable.
+            GameJamin gerçekleşeceği yer işte tam burası... Başkent Üniversitesi!
           </Popup>
         </Marker>
       </MapContainer>

@@ -1,0 +1,44 @@
+@use "../abstracts/variables" as var;
+.mobile-menu{
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 100%;
+  left: 100%;
+  background: linear-gradient(to right top, var.$color-green--light 0%, var.$color-green--dark 100%);
+  width: 85%;
+  padding: 5rem 0;
+  border-radius: .5rem;
+  -webkit-animation: 1s menuToLeft forwards;
+  animation: 1s menuToLeft forwards;
+  &__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  &__item{
+    & a{
+      font-size: 2rem;
+      color: var.$color-white;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}
+
+@keyframes menuToLeft {
+  100%{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@-webkit-keyframes menuToLeft {
+  100%{
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+  }
+}

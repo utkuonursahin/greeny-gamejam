@@ -6,6 +6,10 @@
   justify-content: space-around;
   gap: 5rem;
   padding: 5rem 15rem;
+  @media only screen and (max-width: var.$bp-biggest) {
+    padding: 5rem;
+    gap: 2.5rem;
+  }
   &-form, & .contact{
     display:flex;
     flex-direction: column;
@@ -13,9 +17,10 @@
     gap: 2rem;
     & p{
       font-weight: typo.$font-bold;
-      font-size: 3rem;
-      line-height: 4.5rem;
+      font-size: max(1.6rem,2vw);
+      line-height:min(4.5rem,6vw);
       color: var.$color-green;
+      @media only screen and (max-width: var.$bp-small) {text-align: justify}
       & span{color: var.$color-dark;}
     }
   }
@@ -23,11 +28,19 @@
   & .location{
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
     height: 50vh;
     width: 100%;
+    @media only screen and (max-width: var.$bp-medium) {
+      flex-direction: column;
+      align-items: center;
+    }
     & .leaflet-container{
       height: 100%;
-      width: 50rem;
+      width: min(50rem,75vw);
+    }
+    & .leaflet-popup-content-wrapper{
+      font-size: 1.6rem;
     }
     &__info{
       display: flex;
@@ -35,17 +48,19 @@
       align-items: center;
       gap: 2rem;
       width: 50%;
+      @media only screen and (max-width: var.$bp-medium) {width: 100%;}
       &-heading{
         font-weight: typo.$font-bold;
         font-size: 3rem;
-        line-height: 4.5rem;
         color: var.$color-green;
         text-transform: uppercase;
+        @media only screen and (max-width: var.$bp-medium) {font-size: 2.5rem}
       }
       & p{
         font-size: 1.8rem;
         line-height: 3rem;
         color: var.$color-dark;
+        @media only screen and (max-width: var.$bp-medium) {font-size: 1.6rem;line-height: 2.5rem;}
         & span{color: var.$color-green;}
       }
     }
