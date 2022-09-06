@@ -4,16 +4,16 @@ function MobileMenu({isClicked,setIsClicked}) {
     <nav className={`mobile-menu ${isClicked ? "mobile-menu--active" : ''}`}>
       <ul className="mobile-menu__list" onClick={() => setIsClicked(prev => !prev)} >
         <li className="mobile-menu__item">
-          <NavLink className="mobile-menu__link" to="/" activeClassName="mobile-menu__link--active">Ana Sayfa</NavLink>
+          <NavLink className="mobile-menu__link" to="/">Ana Sayfa</NavLink>
         </li>
         <li className="mobile-menu__item">
-          <NavLink className="mobile-menu__link" to="/sponsors" activeClassName="mobile-menu__link--active">Sponsorlar</NavLink>
+          <NavLink className="mobile-menu__link" to="/sponsors">Sponsorlar</NavLink>
         </li>
         <li className="mobile-menu__item">
-          <NavLink className="mobile-menu__link" to="/terms" activeClassName="mobile-menu__link--active">Kurallar</NavLink>
+          <NavLink className="mobile-menu__link" to="/terms">Kurallar</NavLink>
         </li>
         <li className="mobile-menu__item">
-          <NavLink className="mobile-menu__link" to="/signup" activeClassName="mobile-menu__link--active">İletişim ve Kayıt</NavLink>
+          <NavLink className="mobile-menu__link" to="/signup">İletişim ve Kayıt</NavLink>
         </li>
       </ul>
     </nav>
