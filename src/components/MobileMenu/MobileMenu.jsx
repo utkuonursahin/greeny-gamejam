@@ -1,8 +1,8 @@
 import {NavLink} from "react-router-dom";
-function MobileMenu({setIsClicked}) {
+function MobileMenu({isClicked,setIsClicked}) {
   return (
-    <nav className="mobile-menu">
-      <ul className="mobile-menu__list">
+    <nav className={isClicked ? "mobile-menu mobile-menu--active" : "mobile-menu mobile-menu--disabled"}>
+      <ul className="mobile-menu__list" onClick={() => setIsClicked(prev => !prev)} >
         <li className="mobile-menu__item">
           <NavLink className="mobile-menu__link" to="/" activeClassName="mobile-menu__link--active">Ana Sayfa</NavLink>
         </li>

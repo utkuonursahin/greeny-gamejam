@@ -10,6 +10,10 @@
     padding: 5rem;
     gap: 2.5rem;
   }
+  @media only screen and (max-width: var.$bp-small) {
+    padding: 2rem;
+    gap: 2.5rem;
+  }
   &-form, & .contact{
     display:flex;
     flex-direction: column;
@@ -29,7 +33,7 @@
     display: flex;
     justify-content: space-between;
     gap: 2rem;
-    height: 50vh;
+    height: 75vh;
     width: 100%;
     @media only screen and (max-width: var.$bp-medium) {
       flex-direction: column;
@@ -38,10 +42,9 @@
     & .leaflet-container{
       height: 100%;
       width: min(50rem,75vw);
+      @media only screen and (max-width: var.$bp-small) {width: 100%;}
     }
-    & .leaflet-popup-content-wrapper{
-      font-size: 1.6rem;
-    }
+    & .leaflet-popup-content-wrapper{font-size: 1.6rem;}
     &__info{
       display: flex;
       flex-direction: column;

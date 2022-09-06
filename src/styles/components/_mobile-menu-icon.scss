@@ -1,5 +1,6 @@
 @use "../abstracts/variables" as var;
 .mobile-menu-icon{
+  z-index: 3;
   width: 5rem;
   height: 5rem;
   display: flex;
@@ -20,7 +21,7 @@
       width: 3rem;
       height: .5rem;
       background-color: var.$color-green;
-      transition: all .75s;
+      transition: all .5s;
     }
     &::before{top: -1rem;}
     &::after{top:1rem;}
@@ -31,11 +32,12 @@
   &__checkbox:checked + &__line::before{
     top: 0;
     transform: rotate(225deg);
+    background-color: var.$color-green--light;
   }
   &__checkbox:checked + &__line::after{
     top: 0;
     transform: rotate(-225deg);
+    background-color: var.$color-green--light;
   }
-
   @media only screen and (min-width: var.$bp-big){display: none;}
 }

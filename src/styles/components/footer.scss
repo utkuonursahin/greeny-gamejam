@@ -7,12 +7,13 @@
   height: 100%;
   background-color: var.$color-green--light;
   border-radius:3rem 3rem 0 0;
+  @media only screen and (max-width: var.$bp-small) {border-radius: 1.5rem 1.5rem 0 0;}
   & span{
     color: var.$color-dark;
     font-size: 1.6rem;
     @media only screen and (max-width: var.$bp-biggest) {letter-spacing: 1.6px; text-align: center;}
     @media only screen and (max-width: var.$bp-medium){letter-spacing: 1.2px; font-size: 1.4rem;}
-    @media only screen and (max-width: var.$bp-medium){letter-spacing: 1px; font-size: 1.2rem;}
+    @media only screen and (max-width: var.$bp-small) {letter-spacing: 1px; font-size: 1rem;}
     & a{
       text-decoration: none;
       color: inherit;

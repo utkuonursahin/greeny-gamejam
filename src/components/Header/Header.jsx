@@ -10,8 +10,8 @@ const Header = () => {
       <svg className="header__logo">
         <use href="assets/sprite.svg#logo"/>
       </svg>
-      {isClicked && <MobileMenu setIsClicked={setIsClicked}/>}
-      <MobileMenuIcon setIsClicked={setIsClicked}/>
+      <MobileMenu isClicked={isClicked} setIsClicked={setIsClicked}/>
+      <MobileMenuIcon isClicked={isClicked} setIsClicked={setIsClicked}/>
       <nav className="header__nav">
         <ul className="header__nav-list">
           <li className="header__nav-item">

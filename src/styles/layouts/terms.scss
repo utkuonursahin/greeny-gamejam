@@ -11,6 +11,7 @@
     flex-direction: column;
     gap: 3.5rem;
     @media only screen and (max-width: var.$bp-medium) {padding: 5rem; gap: 2rem;}
+    @media only screen and (max-width: var.$bp-small) {padding: 2.5rem;}
     & span{
       font-family: typo.$font-primary;
       font-weight: typo.$font-regular;

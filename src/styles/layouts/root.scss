@@ -1,4 +1,5 @@
 #root{
+  overflow: hidden;
   max-width: 100vw;
   display: grid;
   grid-template-rows: 15vh minmax(75vh,max-content) 10vh;
