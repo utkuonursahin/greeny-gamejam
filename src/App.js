@@ -1,10 +1,10 @@
+import "./styles/main.scss";
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Main from "./pages/Main/Main";
 import Sponsors from "./pages/Sponsors/Sponsors";
 import Terms from "./pages/Terms/Terms";
 import Signup from "./pages/Signup/Signup";
 import Header from "./components/Header/Header";
-import "./styles/main.scss";
 import Footer from "./components/Footer/Footer";
 
 function App() {
