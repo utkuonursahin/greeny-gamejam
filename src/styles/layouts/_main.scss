@@ -16,9 +16,8 @@
       grid-template-rows: 40rem min-content;
       grid-template-columns: 1fr;
       gap: 2rem;
-      padding: 4rem 12rem 4rem 12rem;
     }
-    @media only screen and (max-width: var.$bp-big){padding: 4rem;}
+    @media only screen and (max-width: var.$bp-big){padding: 0 4rem 4rem 4rem;}
     @media only screen and (max-width: var.$bp-small){grid-template-rows: 25rem min-content;}
     &__illustrations{
       grid-column: 1 / 2;
@@ -44,7 +43,7 @@
       flex-direction: column;
       justify-content: space-between;
       color: var.$color-green;
-      font-size: max(1.6rem,2vw);
+      font-size: clamp(1.6rem,1.9vw,3rem);
       @media only screen and (max-width: var.$bp-biggest){
         grid-row: 2 / 3;
         grid-column: 1 / -1;
@@ -58,11 +57,16 @@
         @media only screen and (max-width: var.$bp-small){line-height: 2.8rem;}
       }
       &--detail{
-        font-size: max(1.4rem,1.9vw);
-        justify-self: end;
+        font-size: clamp(1.4rem,1.8vw,2.9rem);
         text-align: right;
         line-height: 3.5rem;
-        @media only screen and (max-width: var.$bp-small){line-height: 2.5rem;}
+        width: 75%;
+        margin-left: auto;
+        @media only screen and (max-width: var.$bp-small){
+          line-height: 2.5rem;
+          width: 100%;
+          margin-left: 0;
+        }
       }
     }
   }
