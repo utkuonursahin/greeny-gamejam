@@ -9,11 +9,15 @@
     left: 0;
     height: 100%;
     width: 47.5%;
+    @media only screen and (max-width: var.$bp-biggest){width: 45%;}
+    @media only screen and (max-width: var.$bp-medium){width: 40%;}
     background-color: var.$color-green--light;
   }
   &--right{
     left: 52.5%;
     right: 0;
+    @media only screen and (max-width: var.$bp-biggest){left: 55%;}
+    @media only screen and (max-width: var.$bp-medium){left: 60%;}
   }
   & svg{
     position: absolute;
