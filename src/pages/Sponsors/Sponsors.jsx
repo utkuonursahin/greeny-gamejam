@@ -1,4 +1,4 @@
-import Sponsor from "./Sponsor/Sponsor";
+import Sponsor from "../../components/Sponsor/Sponsor";
 
 const Sponsors = () => {
   return (
@@ -11,7 +11,7 @@ const Sponsors = () => {
       </section>
       <h3 className="sponsors__heading--platin">Platin Sponsorlar</h3>
       <section className="sponsors__platin">
-        <Sponsor url="assets/peak-logo.png"/>
+        <Sponsor url="assets/peak-logo.svg"/>
         <Sponsor/>
       </section>
       <h4 className="sponsors__heading--gold">Altın Sponsorlar</h4>

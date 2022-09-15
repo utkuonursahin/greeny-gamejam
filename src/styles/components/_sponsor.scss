@@ -1,7 +1,13 @@
+@use "../abstracts/variables" as var;
 .sponsor{
   height: 20rem;
   width: 100%;
   border-radius: 2.5rem;
+  @media only screen and (max-width: var.$bp-small) {
+    display: flex;
+    align-items: center;
+    height: 18rem;
+  }
   & img{
     object-fit: contain;
     width: 100%;

@@ -15,7 +15,7 @@
     & span{
       font-family: typo.$font-primary;
       font-weight: typo.$font-regular;
-      font-size: clamp(1.8rem,1.8vw,3rem);
+      font-size: clamp(1.6rem,1.5vw,3rem);
       line-height:min(4.5rem,6vw);
       color: var.$color-green;
       text-align: justify;

@@ -6,10 +6,16 @@
   justify-content:space-between;
   align-items: center;
   padding: 2rem min(5vw,16rem);
-  &__logo{
-    width:20rem;
-    height:8rem;
-    @media only screen and (max-width: var.$bp-small){width:15rem;height:6rem;}
+  &__logos{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    &--mascot{height: 6rem;}
+    &--text{
+      width:20rem;
+      height:8rem;
+      @media only screen and (max-width: var.$bp-small){width:15rem;height:6rem;}
+    }
   }
   &__nav{
     @media only screen and (max-width: var.$bp-big){display:none;}

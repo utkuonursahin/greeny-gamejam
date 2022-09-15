@@ -2,7 +2,7 @@
 .main{
   grid-row: 2 / 3;
   display: grid;
-  grid-template-rows: min(60rem, 80vh) repeat(3,min-content) 95vh;
+  grid-template-rows: min-content repeat(3,min-content) 95vh;
   @media only screen and (max-width: var.$bp-biggest){
     grid-template-rows: max-content repeat(3,min-content) 95vh;
   }
@@ -11,7 +11,7 @@
     display: grid;
     grid-template-columns: 3fr 2.5fr;
     gap: 4rem;
-    padding: 3rem 6rem;
+    padding: 4rem 6rem;
     @media only screen and (max-width: var.$bp-biggest){
       grid-template-rows: 40rem min-content;
       grid-template-columns: 1fr;
@@ -41,9 +41,9 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: space-between;
+      gap: 4rem;
       color: var.$color-green;
-      font-size: clamp(1.6rem,1.9vw,3rem);
+      font-size: clamp(1.6rem,1.6vw,3rem);
       @media only screen and (max-width: var.$bp-biggest){
         grid-row: 2 / 3;
         grid-column: 1 / -1;
@@ -57,7 +57,7 @@
         @media only screen and (max-width: var.$bp-small){line-height: 2.8rem;}
       }
       &--detail{
-        font-size: clamp(1.4rem,1.8vw,2.9rem);
+        font-size: clamp(1.4rem,1.5vw,2.9rem);
         text-align: right;
         line-height: 3.5rem;
         width: 75%;
@@ -74,7 +74,7 @@
     display: grid;
     grid-template-rows: min-content repeat(2,1fr);
     grid-template-columns: repeat(2,1fr);
-    gap: 5rem;
+    grid-row-gap: 5rem;
     justify-items: center;
     align-items: center;
     padding: 4rem 0;
@@ -99,13 +99,12 @@
       width: 100vw;
       height: 1rem;
       background-color: var.$color-green--light;
-      padding: 0 8rem;
+      padding: 0 10rem;
       &-list{
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         transition: all 1s ease-in-out;
-        &.left{transform: translateX(-50%);}
       }
       &-item{
         position: relative;
