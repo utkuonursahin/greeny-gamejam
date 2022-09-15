@@ -6,22 +6,22 @@ const Sponsors = () => {
       <h1 className="sponsors__heading heading-1" >Sponsorlar</h1>
       <h2 className="sponsors__heading--main">Ana Sponsorlar</h2>
       <section className="sponsors__main">
-        <Sponsor/>
-        <Sponsor/>
+        <Sponsor url="assets/abb-logo.png"/>
+        <Sponsor url="assets/semruk-logo.png"/>
       </section>
       <h3 className="sponsors__heading--platin">Platin Sponsorlar</h3>
       <section className="sponsors__platin">
-        <Sponsor/>
+        <Sponsor url="assets/peak-logo.png"/>
         <Sponsor/>
       </section>
       <h4 className="sponsors__heading--gold">Altın Sponsorlar</h4>
       <section className="sponsors__gold">
-        <Sponsor/>
-        <Sponsor/>
+        <Sponsor url="assets/taleworlds-logo.png"/>
+        <Sponsor url="assets/digi-logo.png"/>
       </section>
       <h5 className="sponsors__heading--silver">Gümüş Sponsorlar</h5>
       <section className="sponsors__silver">
-        <Sponsor/>
+        <Sponsor url="assets/lost-panda-logo.png"/>
         <Sponsor/>
       </section>
     </main>

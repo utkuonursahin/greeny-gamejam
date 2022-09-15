@@ -1,12 +1,11 @@
 @use "../abstracts/variables" as var;
 @use "../base/typography" as typo;
 .sponsors{
-  padding: 4rem 20rem;
+  padding: 4rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6rem;
-  @media only screen and (max-width: var.$bp-biggest) {padding: 4rem;}
   @media only screen and (max-width: var.$bp-small) {padding: 4rem 0;}
   &__heading{
     &--main{background: linear-gradient(to bottom, #99FA89,#7AE369,#00C667);}
@@ -27,9 +26,9 @@
     justify-content: center;
     gap: 4rem;
     grid-template-rows: repeat(auto-fit,min-content);
-    grid-template-columns: repeat(auto-fit, minmax(40rem, max-content));
-    @media only screen and (max-width: var.$bp-biggest) {
-      grid-template-columns: repeat(auto-fit, minmax(30rem, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, min-content));
+    @media only screen and (max-width: var.$bp-small) {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, min-content));
     }
   }
   &__main .sponsor{
