@@ -21,7 +21,7 @@ function Location() {
         </Marker>
       </MapContainer>
       <div className="location__info">
-        <h2 className="location__info-heading">Adres Tarifi</h2>
+        <h2 className="location__info-heading">Adres Tarifi :</h2>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           Facilis fugiat magni minus quis sint soluta tenetur vitae? Adipisci perferendis, sunt.

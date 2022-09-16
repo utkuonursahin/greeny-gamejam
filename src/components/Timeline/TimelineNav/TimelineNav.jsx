@@ -5,7 +5,7 @@ const TimelineNav = ({day, setDay}) => {
   }
   return (
     <nav className="timeline__nav">
-      <ul className="timeline__nav-list" onClick={determineSelect}>
+      <ul className={`timeline__nav-list ${day === 3 && 'left'}`} onClick={determineSelect}>
         <li className={`timeline__nav-item ${day === 1 ? 'active' : ''} ${day-1 > 0 ? 'passed' : ''}`} data-date={1}>
           <span className="date" >1.GÜN</span>
         </li>

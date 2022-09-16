@@ -1,5 +1,6 @@
-import TimelineNav from "./TimelineNav/TimelineNav";
 import {useState} from "react";
+import TimelineNav from "./TimelineNav/TimelineNav";
+import TimelinePlan from "./TimelinePlan/TimelinePlan";
 
 function Timeline() {
   const [day, setDay] = useState(1);
@@ -9,6 +10,7 @@ function Timeline() {
         Etkinlik Planı
       </h2>
       <TimelineNav day={day} setDay={setDay}/>
+      <TimelinePlan day={day}/>
     </section>
   );
 }

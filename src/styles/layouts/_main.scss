@@ -43,7 +43,7 @@
       flex-direction: column;
       gap: 4rem;
       color: var.$color-green;
-      font-size: clamp(1.6rem,1.6vw,3rem);
+      font-size: var.$font-size--general;
       @media only screen and (max-width: var.$bp-biggest){
         grid-row: 2 / 3;
         grid-column: 1 / -1;
@@ -57,7 +57,7 @@
         @media only screen and (max-width: var.$bp-small){line-height: 2.8rem;}
       }
       &--detail{
-        font-size: clamp(1.4rem,1.5vw,2.9rem);
+        font-size: clamp(1.3rem,1.2vw,2.9rem);
         text-align: right;
         line-height: 3.5rem;
         width: 75%;
@@ -75,7 +75,7 @@
     grid-template-rows: min-content repeat(2,1fr);
     grid-template-columns: repeat(2,1fr);
     grid-row-gap: 5rem;
-    justify-items: center;
+    grid-column-gap: 10rem;
     align-items: center;
     padding: 4rem 0;
     @media only screen and (max-width: var.$bp-biggest){
@@ -91,7 +91,6 @@
   & .timeline{
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 10rem;
     padding: 4rem 0;
     text-align: center;
@@ -99,14 +98,16 @@
       width: 100vw;
       height: 1rem;
       background-color: var.$color-green--light;
-      padding: 0 10rem;
       &-list{
         list-style: none;
-        display: flex;
-        justify-content: space-around;
+        display: grid;
+        grid-template-columns: 10rem repeat(3,1fr) 10rem;
         transition: all 1s ease-in-out;
       }
       &-item{
+        &:nth-of-type(1){grid-column: 2 / 3; justify-self: center;}
+        &:nth-of-type(2){grid-column:3 / 4; justify-self:center;}
+        &:nth-of-type(3){grid-column: 4 / 5; justify-self: center;}
         position: relative;
         cursor: pointer;
         margin-top: -1.5rem;
@@ -138,5 +139,6 @@
         &.passed{background-color: var.$color-gray;}
       }
     }
+
   }
 }
