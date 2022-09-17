@@ -127,7 +127,7 @@
           font-size: 2rem;
           @media only screen and (max-width: var.$bp-small) {font-size: 1.6rem;}
         }
-        &.active{
+        &:not(.active){
           &::before{
             content: '';
             position: absolute;
