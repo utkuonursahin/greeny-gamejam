@@ -21,6 +21,7 @@
     flex-direction: column;
     gap: 2rem;
     & p{
+      text-align: center;
       font-weight: typo.$font-bold;
       font-size: var.$font-size--general;
       line-height:min(4.5rem,6vw);
@@ -38,14 +39,15 @@
       border-radius: .5rem;
       transition: all .25s ease-in-out ;
       & a{
+        display: flex;
+        justify-content: center;
+        width: 100%;
         color: var.$color-dark;
         font-weight: typo.$font-bold;
         font-size: 1.8rem;
         text-decoration: none;
       }
-      &:hover{
-        transform: scale(1.05);
-      }
+      &:hover{transform: scale(1.05);}
     }
   }
   & .contact p span{display: flex;justify-content: center;}
