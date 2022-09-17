@@ -26,7 +26,7 @@
       line-height:min(4.5rem,6vw);
       color: var.$color-green;
       @media only screen and (max-width: var.$bp-small) {text-align: justify}
-      & span{color: var.$color-dark;}
+      & span{color: var.$color-green--dark;}
     }
     & button{
       cursor: pointer;

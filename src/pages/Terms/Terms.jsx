@@ -12,7 +12,7 @@ const Terms = () => {
         <span>Greeny Game Jam katılımcıları tarafından Greeny Game Jam esnasında oluşturulan oyunların, oyunları oluşturan tüm öğelerin (kod, tasarım vb.) kullanım ve paylaşım hakkı Greeny Game Jam organizasyon ekibine ait olacaktır.</span>
         <span>Yarışmanın ana amacı oyun üretmek olduğundan, yarışma sonucunda organizasyon ekibi eserleri çeşitli mecralarda ve faaliyetlerde kullanabilir.</span>
         <span>Greeny Game Jam organizasyonuna dahil olan tüm topluluklar, her türlü tanıtıcı malzemelerinde yarışmaya başvuran tüm eserlerin fotoğraflarını, videolarını, oyunların oynanması için gerekli olan dosyaları, oyunları oluşturan tüm öğeleri (kod, tasarım vb.) ve itch.io linklerini telif hakkı ödemeksizin kullanma ve sponsorlar ile paylaşma hakkına sahiptir.</span>
-        <span>Greeny Game Jam katılımcısı olan tüm takımlar etkinlik esnasında yaptıkları oyunların kodlarını 23 Ekim Pazar günü saat … ‘e kadar Github’a herkese açık bir şekilde yüklemekten ve Game Jam’e ait itch.io sayfasına … tarihi … saatine kadar yüklemekten sorumlulardır. Aksi takdirde yapılan oyunlar sıralamaya giremeyecek ve etkinlik sonundaki sunumlarda gösterilmeyecektir.</span>
+        <span>Greeny Game Jam katılımcısı olan tüm takımlar etkinlik esnasında yaptıkları oyunların kodlarını 23 Ekim Pazar günü saat 18.30'a kadar Github’a herkese açık bir şekilde yüklemekten ve Game Jam’e ait itch.io sayfasına yüklemekten sorumlulardır. Aksi takdirde yapılan oyunlar sıralamaya giremeyecek ve etkinlik sonundaki sunumlarda gösterilmeyecektir.</span>
       </p>
     </main>
   );

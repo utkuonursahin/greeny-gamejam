@@ -13,7 +13,7 @@ const Sponsors = () => {
         <h2 className="heading-2 sponsors__heading--platin">Platin Sponsor</h2>
         <Sponsor type="platin" url="assets/peak-logo.svg"/>
         <h2 className="heading-2 sponsors__heading--reward">Ödül Sponsoru</h2>
-        <Sponsor type="reward" url="assets/monster-logo.jpg"/>
+        <Sponsor type="reward" url="assets/monster-logo.png"/>
       </section>
       <section className="container">
         <h2 className="heading-2 sponsors__heading--golden">Altın Sponsorlar</h2>

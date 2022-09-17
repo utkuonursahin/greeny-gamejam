@@ -96,6 +96,7 @@
     gap: 5rem;
     padding: 4rem 0;
     text-align: center;
+    @media only screen and (max-width: var.$bp-small) {gap: 7rem;}
     &__nav{
       width: 100vw;
       height: 1rem;
@@ -124,8 +125,9 @@
           left: 50%;
           translate: -50% -50%;
           font-size: 2rem;
+          @media only screen and (max-width: var.$bp-small) {font-size: 1.6rem;}
         }
-        &.active,&.passed{
+        &.passed{
           &::before{
             content: '';
             position: absolute;
@@ -138,7 +140,6 @@
             translate: 50% 50%;
           }
         }
-        &.passed{background-color: var.$color-gray;}
       }
     }
     &-plan{
