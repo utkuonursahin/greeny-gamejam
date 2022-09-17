@@ -1,10 +1,11 @@
 @use "../abstracts/variables" as var;
+@use "../base/typography" as typo;
 .main{
   grid-row: 2 / 3;
   display: grid;
-  grid-template-rows: min-content repeat(3,min-content) 95vh;
+  grid-template-rows: min-content repeat(4,min-content);
   @media only screen and (max-width: var.$bp-biggest){
-    grid-template-rows: max-content repeat(3,min-content) 95vh;
+    grid-template-rows: max-content repeat(4,min-content);
   }
   & .hero{
     height: 100%;
@@ -57,7 +58,8 @@
         @media only screen and (max-width: var.$bp-small){line-height: 2.8rem;}
       }
       &--detail{
-        font-size: clamp(1.3rem,1.2vw,2.9rem);
+        font-weight: typo.$font-bold;
+        font-size: clamp(1.3rem,1.2vw,2.3rem);
         text-align: right;
         line-height: 3.5rem;
         width: 75%;
@@ -91,7 +93,7 @@
   & .timeline{
     display: flex;
     flex-direction: column;
-    gap: 10rem;
+    gap: 5rem;
     padding: 4rem 0;
     text-align: center;
     &__nav{
@@ -101,13 +103,13 @@
       &-list{
         list-style: none;
         display: grid;
-        grid-template-columns: 10rem repeat(3,1fr) 10rem;
+        grid-template-columns: 5rem repeat(3,1fr) 5rem;
         transition: all 1s ease-in-out;
       }
       &-item{
-        &:nth-of-type(1){grid-column: 2 / 3; justify-self: center;}
+        &:nth-of-type(1){grid-column: 2 / 3; justify-self: start;}
         &:nth-of-type(2){grid-column:3 / 4; justify-self:center;}
-        &:nth-of-type(3){grid-column: 4 / 5; justify-self: center;}
+        &:nth-of-type(3){grid-column: 4 / 5; justify-self: end;}
         position: relative;
         cursor: pointer;
         margin-top: -1.5rem;
@@ -139,6 +141,66 @@
         &.passed{background-color: var.$color-gray;}
       }
     }
-
+    &-plan{
+      display:grid;
+      grid-template-columns: 5rem repeat(3,1fr) 5rem ;
+      transition: all 1s ease-in-out;
+      @media only screen and (max-width: var.$bp-biggest){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__list{
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+        list-style: none;
+        transition: all .2s ease-in-out;
+        &:nth-of-type(1){grid-column: 2 / 3; justify-self: start;}
+        &:nth-of-type(2){grid-column:3 / 4;justify-self:center; margin-left: -2rem;}
+        &:nth-of-type(3){grid-column: 4 / 5;justify-self: end;}
+        &.passed {
+          & .circle,.text{
+            transition: background-color .2s ease-in-out;
+            background-color: var.$color-gray;
+          }
+          @media only screen and (max-width: var.$bp-biggest){display: none;}
+        }
+        &.disabled{display: none;}
+      }
+      &__item{
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+        & .circle{
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          background-color: var.$color-green--light;
+        }
+        & .hour{
+          white-space: nowrap;
+          font-size: 1.6rem;
+          font-weight: typo.$font-bold;
+        }
+        & .text{
+          margin-left: auto;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 6rem;
+          width: 25rem;
+          border-radius: 2rem;
+          background-color: var.$color-green--light;
+          color: var.$color-white;
+          font-size: 1.6rem;
+        }
+        @media only screen and (max-width: var.$bp-small){
+          & .circle{width: 1.5rem; height: 1.5rem;}
+          & .hour{font-size: 1.3rem; white-space:normal;}
+          & .text{font-size: 1.4rem; width: 20rem; height: 5.5rem;}
+        }
+      }
+    }
   }
 }

@@ -14,4 +14,9 @@
     height: 100%;
     padding: 2rem;
   }
+  &--reward img{
+    object-fit: cover;
+    padding: 0;
+    border-radius: 2.25rem;
+  }
 }

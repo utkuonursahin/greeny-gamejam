@@ -9,7 +9,8 @@
   visibility: hidden;
   background: linear-gradient(to right top, var.$color-green--light 0%, var.$color-green--dark 100%);
   width: 100%;
-  padding: 9rem 0;
+  height: 100vh;
+  padding: 15rem 0;
   -webkit-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   &--active{

@@ -3,26 +3,26 @@ import Sponsor from "../../components/Sponsor/Sponsor";
 const Sponsors = () => {
   return (
     <main className="sponsors">
-      <h1 className="sponsors__heading heading-1" >Sponsorlar</h1>
-      <h2 className="sponsors__heading--main">Ana Sponsorlar</h2>
-      <section className="sponsors__main">
-        <Sponsor url="assets/abb-logo.png"/>
-        <Sponsor url="assets/semruk-logo.png"/>
+      <h1 className="heading-1" >Sponsorlar</h1>
+      <section className="container">
+        <h2 className="heading-2 sponsors__heading--main">Ana Sponsorlar</h2>
+        <Sponsor type="main" url="assets/abb-logo.png"/>
+        <Sponsor type="main" url="assets/semruk-logo.png"/>
       </section>
-      <h3 className="sponsors__heading--platin">Platin Sponsorlar</h3>
-      <section className="sponsors__platin">
-        <Sponsor url="assets/peak-logo.svg"/>
-        <Sponsor/>
+      <section className="container reward">
+        <h2 className="heading-2 sponsors__heading--platin">Platin Sponsor</h2>
+        <Sponsor type="platin" url="assets/peak-logo.svg"/>
+        <h2 className="heading-2 sponsors__heading--reward">Ödül Sponsoru</h2>
+        <Sponsor type="reward" url="assets/monster-logo.jpg"/>
       </section>
-      <h4 className="sponsors__heading--gold">Altın Sponsorlar</h4>
-      <section className="sponsors__gold">
-        <Sponsor url="assets/taleworlds-logo.png"/>
-        <Sponsor url="assets/digi-logo.png"/>
+      <section className="container">
+        <h2 className="heading-2 sponsors__heading--golden">Altın Sponsorlar</h2>
+        <Sponsor type="gold" url="assets/taleworlds-logo.png"/>
+        <Sponsor type="gold" url="assets/digi-logo.png"/>
       </section>
-      <h5 className="sponsors__heading--silver">Gümüş Sponsorlar</h5>
-      <section className="sponsors__silver">
-        <Sponsor url="assets/lost-panda-logo.png"/>
-        <Sponsor/>
+      <section className="container silver">
+        <h2 className="heading-2 sponsors__heading--silver">Gümüş Sponsorlar</h2>
+        <Sponsor type="silver" url="assets/lost-panda-logo.png"/>
       </section>
     </main>
   );

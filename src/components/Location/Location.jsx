@@ -9,22 +9,21 @@ function Location() {
   })
   return (
     <section className="location">
-      <MapContainer center={[39.888189, 32.6568321]} zoom={14} scrollWheelZoom={false}>
+      <MapContainer center={[40.0035119, 32.8948606]} zoom={14} scrollWheelZoom={false}>
         <TileLayer
           attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
           url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
         />
-        <Marker position={[39.8882997, 32.6557593]} icon={icon}>
+        <Marker position={[40.0035119, 32.8948606]} icon={icon}>
           <Popup>
-            GameJamin gerçekleşeceği yer işte tam burası... Başkent Üniversitesi!
+            GameJamin gerçekleşeceği yer işte tam burası...
           </Popup>
         </Marker>
       </MapContainer>
       <div className="location__info">
         <h2 className="location__info-heading">Adres Tarifi :</h2>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-          Facilis fugiat magni minus quis sint soluta tenetur vitae? Adipisci perferendis, sunt.
+          Etap Rekreasyon Alanı, Yeşiltepe Mahallesi Günebakan Sokak 2, Küme Evleri No: 5, 06010 Keçiören / Ankara
         </p>
       </div>
     </section>
