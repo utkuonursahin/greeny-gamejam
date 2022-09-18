@@ -5,13 +5,15 @@
   grid-template-rows: min-content repeat(auto-fit,min-content);
   gap: 4rem;
   padding: 4rem;
+  @media only screen and (max-width: var.$bp-small){padding: 3rem;}
   &__heading{
     &--main{background: linear-gradient(to bottom, #99FA89,#7AE369,#00C667);}
     &--platin{background: linear-gradient(to bottom, #68F1C8,#00FFFF,#0020C6);}
     &--golden{background: linear-gradient(to bottom, #EAFD0C,#F1D368,#FFB800);}
     &--silver{background: linear-gradient(to bottom, #D9D9D9,#9C9AA0,#013A1F);}
     &--reward{background: linear-gradient(to bottom, #C578D8,#900EB0F7,#900EB0);}
-    &--main,&--platin,&--golden,&--silver,&--reward{
+    &--neck{background: linear-gradient(to bottom,#F7C77E,#F1B04C,#EC9006);}
+    &--main,&--platin,&--golden,&--silver,&--reward, &--neck{
       -webkit-text-fill-color: transparent;
       -webkit-background-clip: text;
     }
@@ -24,30 +26,19 @@
     justify-content: center;
     gap: 4rem;
     @media screen and (max-width: var.$bp-biggest){grid-template-columns: repeat(auto-fit, minmax(30rem,min-content));}
-    & .heading-2{
-      grid-column: 1 / 3;
-    }
-    & .sponsor:nth-of-type(1){
-      grid-column: 1 / 2;
-    }
-    & .sponsor:nth-of-type(2){
-      grid-column: 2 / 3;
-    }
-    &.reward{
-      white-space: nowrap;
+    & .heading-2{grid-column: 1 / 3;}
+    & .sponsor:nth-of-type(1){grid-column: 1 / 2;}
+    & .sponsor:nth-of-type(2){grid-column: 2 / 3;}
+    &.multiple{
       & h2:nth-of-type(1){
         grid-row: 1 / 2;
         grid-column: 1 / 2;
       }
       & h2:nth-of-type(2){
+        white-space: normal;
         grid-row: 1 / 2;
         grid-column: 2 / 3;
       }
-    }
-    &.silver .sponsor{
-      grid-column: 1 / 3;
-      width: 50%;
-      justify-self: center;
     }
     & .sponsor--main{
       border: .25rem solid var.$color-green--light;
@@ -69,12 +60,16 @@
       border: .25rem solid #D9D9D9;
       box-shadow: 0 0 1rem .1rem #D9D9D9;
     }
+    & .sponsor--neck{
+      border: .25rem solid #EC9006;
+      box-shadow: 0 0 1rem .1rem #EC9006;
+    }
     @media screen and (max-width: var.$bp-big){
-      grid-template-columns: 1fr;
+      grid-template-columns: 100%;
       grid-template-rows: min-content repeat(2,min-content);
       grid-auto-rows: min-content;
       & .heading-2,.sponsor:nth-of-type(1),.sponsor:nth-of-type(2){grid-column: 1 / 2;}
-      &.reward{
+      &.multiple{
         white-space: nowrap;
         & h2:nth-of-type(1){
           grid-row: 1 / 2;
@@ -93,7 +88,6 @@
           grid-column: 1 / 2;
         }
       }
-      &.silver .sponsor{width: 100%;}
     }
   }
 }
