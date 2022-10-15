@@ -17,4 +17,7 @@
   &--reward img{
     object-fit: cover;
   }
+  &--main:nth-of-type(1) img{
+    object-fit: cover;
+  }
 }

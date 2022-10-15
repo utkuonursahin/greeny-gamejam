@@ -6,11 +6,14 @@ import Terms from "./pages/Terms/Terms";
 import Signup from "./pages/Signup/Signup";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import {WorkshopsProvider} from "./context/WorkshopsContext";
 
 function App() {
   return (
     <BrowserRouter>
-      <Header/>
+      <WorkshopsProvider>
+        <Header/>
+      </WorkshopsProvider>
       <Routes>
         <Route path="/" element={<Main/>}/>
         <Route path="/sponsors" element={<Sponsors/>}/>
