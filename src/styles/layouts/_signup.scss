@@ -52,6 +52,7 @@
   }
   & .contact p span{display: flex;justify-content: center;}
   & .location{
+    z-index: 1;
     grid-column: 2 / 3;
     display: flex;
     flex-direction: column;

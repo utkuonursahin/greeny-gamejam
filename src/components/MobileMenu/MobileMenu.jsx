@@ -18,7 +18,7 @@ function MobileMenu({isClicked,setIsClicked}) {
           <NavLink className="mobile-menu__link" to="/signup">İletişim ve Kayıt</NavLink>
         </li>
         <li className="mobile-menu__item">
-          <a className="mobile-menu__link" to="#" onClick={() => setIsOpened(prev => !prev)}>Atölyeler</a>
+          <a className="mobile-menu__link" href="#" onClick={() => setIsOpened(prev => !prev)}>Atölyeler</a>
         </li>
       </ul>
     </nav>

@@ -1,11 +1,8 @@
 import React from 'react';
-
+import {useWorkshops} from "../../context/WorkshopsContext";
 const Overlay = () => {
-  return (
-    <div className="overlay">
-
-    </div>
-  );
+  const {setIsOpened} = useWorkshops();
+  return (<div className="overlay" onClick={()=>setIsOpened(prev => !prev)}></div>);
 };
 
 export default Overlay;
