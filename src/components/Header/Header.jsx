@@ -4,7 +4,7 @@ import MobileMenuIcon from "../MobileMenu/MobileMenuIcon/MobileMenuIcon";
 import HeaderNav from "./HeaderNav/HeaderNav";
 import {Link} from "react-router-dom";
 import {useWorkshops} from "../../context/WorkshopsContext";
-import WorkshopsPopup from "./WorkshopsPopup/WorkshopsPopup";
+import WorkshopsPopup from "../WorkshopsPopup/WorkshopsPopup";
 import Overlay from "../Overlay/Overlay";
 
 const Header = () => {

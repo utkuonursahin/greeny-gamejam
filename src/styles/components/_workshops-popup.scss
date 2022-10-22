@@ -1,0 +1,47 @@
+@use "../abstracts/variables" as var;
+.workshops-popup{
+  z-index: 4;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 85%;
+  padding: 2.5rem 2vw;
+  border-radius: 3rem;
+  box-shadow: 0 0 .3rem .25rem var.$color-orange;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  background-color: var.$color-white;
+  @media only screen and (max-width: var.$bp-small){
+    width: 95%;
+    top: 2rem;
+
+  }
+  &__close{
+    position: absolute;
+    top: 4rem;
+    right: 4rem;
+    cursor: pointer;
+    @media only screen and (max-width: var.$bp-small){top: 2rem;right: 2rem;}
+  }
+  & h2{color: #2B2B2B;}
+  & p{
+    text-align: center;
+    font-size: 1.6rem;
+    color: #2B2B2B;
+  }
+  & div{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    & img{height: 30rem;}
+    @media only screen and (max-width: var.$bp-small){
+      gap: 2rem;
+      & img{height: 17rem;}
+    }
+  }
+}

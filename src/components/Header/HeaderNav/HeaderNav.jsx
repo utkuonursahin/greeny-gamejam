@@ -1,8 +1,7 @@
 import {NavLink} from "react-router-dom";
 import {useWorkshops} from "../../../context/WorkshopsContext";
-import WorkshopsPopup from "../WorkshopsPopup/WorkshopsPopup";
 function HeaderNav() {
-  const { isOpened, setIsOpened } = useWorkshops();
+  const {setIsOpened} = useWorkshops();
   return (
     <nav className="header__nav" aria-label="primary-navigation">
       <ul className="header__nav-list">
